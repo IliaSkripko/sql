@@ -81,7 +81,7 @@ END as prod_qty_type_condensed
 ,CASE
 	WHEN product_name LIKE '%pepper%' THEN 1
 	ELSE 0
-END as pepepr_flag
+END as pepper_flag
 FROM product;
 
 --JOIN
