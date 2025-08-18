@@ -53,11 +53,8 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
-```
-Your answer...
-```
-
-***
+Type 1 slowly changing dimensions overwrite old data with new data dn they do not track historical data - due to this for type one we would only include the customer_id, their first_name, their last_name, as well as their address. The address will be divided into multiple columns, unit_number, street_name, city, province, postal_code.
+Type 2 slowly changing dimensions adds a new row, by adding a new row you retain historical data - we would keep the same columns from above with Type 1, but we would also add two additional columns one called start_date to track when they started living in that address, and end_date to track when they moved from that address.
 
 ## Section 2:
 You can start this section following *session 4*.
